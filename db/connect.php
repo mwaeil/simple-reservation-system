@@ -6,8 +6,8 @@ $PROJECT_NAME           = 'Reservation System';
 $GLOBALS['host']        = 'localhost';
 $GLOBALS['username']    = 'root';
 $GLOBALS['password']    = '';
-$GLOBALS['port']        = '3307';
-$GLOBALS['db']          = 'simple-reservation-system1';
+$GLOBALS['port']        = '3306';
+$GLOBALS['db']          = 'simple-reservation-system';
 
 $GLOBALS['pdo']         = new PDO("mysql:host={$GLOBALS['host']};port={$GLOBALS['port']};dbname=mysql", $GLOBALS['username'], $GLOBALS['password']);
 $GLOBALS['pdo']         ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);

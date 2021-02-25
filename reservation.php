@@ -27,6 +27,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = 'Selected Date and Time is not available at the moment. Please choose other date and time.';
     }
 
+    if(strlen($postData['mobile']) <= 10) {
+        $errors[] = 'Please enter a valid mobile no.';
+    }
+
 
 
     if(count($errors) <= 0) {
@@ -102,12 +106,12 @@ $units = get_unit($_GET['id']);
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="cc-name">From</label>
-                        <input type="date" class="form-control" name="date_from" required value="<?php echo isset($_POST['date_from']) ? $_POST['date_from'] : '' ?>">
+                        <input type="date" min="<?=date('Y-m-d', strtotime("+1 day"))?>" class="form-control" name="date_from" required value="<?php echo isset($_POST['date_from']) ? $_POST['date_from'] : '' ?>">
                         <input type="time" class="form-control" name="time_from" required value="<?php echo isset($_POST['time_from']) ? $_POST['time_from'] : '' ?>">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="cc-number">To</label>
-                        <input type="date" class="form-control" name="date_to" required value="<?php echo isset($_POST['date_to']) ? $_POST['date_to'] : '' ?>">
+                        <input type="date" min="<?=date('Y-m-d', strtotime("+1 day"))?>" class="form-control" name="date_to" required value="<?php echo isset($_POST['date_to']) ? $_POST['date_to'] : '' ?>">
                         <input type="time" class="form-control" name="time_to" required value="<?php echo isset($_POST['time_to']) ? $_POST['time_to'] : '' ?>">
                     </div>
                 </div>

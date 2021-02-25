@@ -39,8 +39,11 @@ $r = get_reservation($_GET['id']);
                         <tr>
                             <td colspan="2">
                                 <div class="panel panel-success " style="margin: 0">
-                                    <div class="panel-heading">
-                                        Thank you for booking a reservation. We will confirm your booking vial <b>CALL</b> or <b>SMS</b> within 12 hours.
+                                    <div class="panel-heading hide-on-print">
+                                        Thank you for booking a reservation.
+                                    </div>
+                                    <div class="panel-body">
+                                        Please wait for a confirmation of your booking via <b>CALL</b> or <b>SMS</b> within 12 hours.
                                     </div>
                                 </div>
                             </td>
@@ -54,16 +57,20 @@ $r = get_reservation($_GET['id']);
                             <td><?=$r['email']?></td>
                         </tr>
                         <tr>
+                            <td><b>Mobile No.</b></td>
+                            <td><?=$r['mobile']?></td>
+                        </tr>
+                        <tr>
                             <td><b>Unit</b></td>
                             <td><?=$r['unit_name']?></td>
                         </tr>
                         <tr>
                             <td><b>From</b></td>
-                            <td><?=$r['date_from']?></td>
+                            <td><?=date('F j, Y h:i a', strtotime($r['date_from']))?></td>
                         </tr>
                         <tr>
                             <td><b>To</b></td>
-                            <td><?=$r['date_to']?></td>
+                            <td><?=date('F j, Y h:i a', strtotime($r['date_to']))?></td>
                         </tr>
                         <tr>
                             <td><b>Status</b></td>
