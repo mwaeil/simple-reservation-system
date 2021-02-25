@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "name": "Unit 1001",
+    "description": "Warmly furnished rooms in a laid-back hotel offering an outdoor pool, a bar & a garden, plus a gym.",
+    "img": "1.jpg"
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "name": "Unit 1002",
+    "description": "Warmly furnished rooms in a laid-back hotel offering an outdoor pool, a bar & a garden, plus a gym.",
+    "img": "2.jpg"
+  },
+  {
+    "id": 3,
+    "category_id": 1,
+    "name": "Unit 1003",
+    "description": "Warmly furnished rooms in a laid-back hotel offering an outdoor pool, a bar & a garden, plus a gym.",
+    "img": "3.jpg"
+  },
+  {
+    "id": 4,
+    "category_id": 1,
+    "name": "Unit 1004",
+    "description": "Warmly furnished rooms in a laid-back hotel offering an outdoor pool, a bar & a garden, plus a gym.",
+    "img": "4.jpg"
+  },
+  {
+    "id": 5,
+    "category_id": 1,
+    "name": "Unit 1005",
+    "description": "Warmly furnished rooms in a laid-back hotel offering an outdoor pool, a bar & a garden, plus a gym.",
+    "img": "5.jpg"
+  }
+]

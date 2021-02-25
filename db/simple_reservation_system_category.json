@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Tagaytay",
+    "description": "Book your Hotel in Tagaytay online. No reservation costs. Great rates. Apartments. Villas. Motels."
+  },
+  {
+    "id": 2,
+    "name": "Boracay",
+    "description": "The simply furnished rooms have flat-screen TVs, and tea and coffeemaking equipment."
+  },
+  {
+    "id": 3,
+    "name": "Bohol",
+    "description": "Simple rooms, rustic huts and relaxed 2-story villas offer Internet access and cable TV."
+  }
+]
